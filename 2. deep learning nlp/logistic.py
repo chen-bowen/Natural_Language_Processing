@@ -8,6 +8,8 @@ from builtins import range, input
 # sudo pip install -U future
 
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import random
 from datetime import datetime
@@ -15,8 +17,8 @@ from datetime import datetime
 import os
 import sys
 sys.path.append(os.path.abspath('..'))
-from rnn_class.util import get_wikipedia_data
-from rnn_class.brown import get_sentences_with_word2idx_limit_vocab, get_sentences_with_word2idx
+from RNN.util import get_wikipedia_data
+from RNN.brown import get_sentences_with_word2idx_limit_vocab, get_sentences_with_word2idx
 
 from markov import get_bigram_probs
 
